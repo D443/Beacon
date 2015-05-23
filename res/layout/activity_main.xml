@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/startScan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startScan"
+        android:text="Taramayı Başlat" />
+
+    <Button
+        android:id="@+id/stopScan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="stopScan"
+        android:text="Taramayı Bitir" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clear"
+        android:text="Sonuçları Temizle" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="204dp"
+        android:drawSelectorOnTop="false" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/uzak" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
